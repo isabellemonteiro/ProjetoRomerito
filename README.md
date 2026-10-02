@@ -12,7 +12,7 @@ Tema: Cafeteria - Grão e Ofício
 - Imagens
 - Textos e parágrafos
 
-Componentes compostos desenvolvidos
+Componentes compostos desenvolvidos:
 
 - Navbar:logo, links de navegação e botão de reserva.
 - Hero:título, descrição e botão de acesso ao cardápio.
