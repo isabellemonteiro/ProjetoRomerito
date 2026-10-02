@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grão e Ofício - Cafeteria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  
+  <header class="navbar">
+    <div class="navbar__logo">Grão & Ofício</div>
+    <ul class="navbar__links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+    </ul>
+    
+    <a href="#reserva" class="btn btn--primary">Reservar</a>
+  </header>
+
+
+  <section id="inicio" class="hero">
+    <h1>Cafeteria Grão e Ofício</h1>
+    <p>O lugar perfeito para café especial, estudos e reuniões.</p>
+    <a href="#cardapio" class="btn btn--primary">Ver Cardápio</a>
+  </section>
+
+  
+  <section id="sobre" class="sobre">
+    <h2 style="margin-bottom: 20px; color: #3e2723;">Sobre Nossa Casa</h2>
+    <img src="https://i0.wp.com/elaqueamaviajar.com/wp-content/uploads/2021/04/pitico-cafe-saopaulo.jpg?resize=700%2C875&ssl=1" alt="Interior da Cafeteria" class="sobre__img">
+    <p>A <strong>Grão e Ofício</strong> nasceu no coração da cidade com o objetivo de conectar pessoas através do café. Oferecemos grãos selecionados e métodos de extração artesanais para quem valoriza sabor e qualidade.</p>
+    <p style="margin-top: 10px;">Seja para trabalhar com nosso Wi-Fi de alta velocidade, ler um livro em silêncio ou encontrar amigos para uma boa conversa, nosso espaço foi desenhado para ser o seu refúgio diário.</p>
+ <p style="margin-top: 10px;">Do grão ao detalhe:<br>
+selecionamos nossos grãos com atenção e valorizamos cada etapa do processo, desde a escolha do café até a forma como ele chega à sua mesa. Nossos produtos são preparados de maneira artesanal, sempre buscando equilíbrio entre qualidade, sabor e personalidade.</p>
+    <p style="margin-top: 10px;">Acreditamos que o café vai muito além do sabor. Ele acompanha conversas, encontros, pausas no meio do dia e aqueles pequenos momentos em que tudo o que precisamos é sentar, respirar e aproveitar.
+Grão & Ofício.
+Onde bons grãos encontram boas histórias.</p>
+ 
+</section>
+
+
+  
+  <h2 id="cardapio" class="section-title">Cardápio em Destaque</h2>
+  <section class="cardapio-grid">
+    
+  
+    <div class="card-base card-produto card-produto--destaque">
+      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Espresso">
+      <span class="badge badge--destaque">Mais Pedido</span>
+      <h3 class="card-produto__title">Espresso Especial</h3>
+      <p class="card-produto__desc">Extração de grãos 100% arábica com notas florais e frutadas.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 8,50</span>
+        <a href="#reserva" class="btn btn--secondary">Pedir</a>
+      </div>
+    </div>
+
+    
+    <div class="card-base card-produto">
+      <img src="https://files.agro20.com.br/uploads/2020/01/Caf%C3%A9-expresso-1.jpg" alt="Cappuccino">
+      <span class="badge badge--novo">Novo</span>
+      <h3 class="card-produto__title">Cappuccino Italiano</h3>
+      <p class="card-produto__desc">Espresso e com uma cremosa camada de espuma.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 12,00</span>
+        <a href="#reserva" class="btn btn--secondary">Pedir</a>
+      </div>
+    </div>
+
+    
+    <div class="card-base card-produto">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMkLoOXi3Ii3jSI69jtLaSAWpT-fZNa16cdng_TV4mwj39g7R4HZFbS7pF&s=10" alt="Cold Brew">
+      <span class="badge badge--destaque">Refrescante</span>
+      <h3 class="card-produto__title">Cold Brew Artesanal</h3>
+      <p class="card-produto__desc">Café extraído a frio por 18 horas, suave e naturalmente adocicado.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 14,00</span>
+        <a href="#reserva" class="btn btn--secondary">Pedir</a>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="card-base card-produto">
+      <img src="https://www.tevadeli.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/m/amendoas2.webp" alt="Croissant">
+      <span class="badge badge--esgotado">Esgotado</span>
+      <h3 class="card-produto__title">Croissant Amêndoas</h3>
+      <p class="card-produto__desc">Massa folhada artesanal recheada com creme de amêndoas.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 14,00</span>
+        <a href="#reserva" class="btn btn--secondary">Indisponível</a>
+      </div>
+    </div>
+
+    
+    <div class="card-base card-produto">
+      <img src="https://www.tendaatacado.com.br/dicas/wp-content/uploads/2025/05/pao-de-queijo-recheado-topo.jpg" alt="Pão de Queijo">
+      <span class="badge badge--novo">Caseiro</span>
+      <h3 class="card-produto__title">Pão de Queijo Recheado</h3>
+      <p class="card-produto__desc">Porção com 6 unidades feitas com queijo importado.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 10,00</span>
+        <a href="#reserva" class="btn btn--secondary">Pedir</a>
+      </div>
+    </div>
+
+    
+    <div class="card-base card-produto">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJjkOwPk9mYbBj2C9FWAeEpuoAr9ExmNs-y114gtSqlOU3UO7xhGJF-zY&s=10" alt="Bolo de Cenoura">
+      <span class="badge badge--destaque">Fatia</span>
+      <h3 class="card-produto__title">Bolo de Cenoura</h3>
+      <p class="card-produto__desc">Tradicional bolo fofinho acompanhado de cobertura vulcão de chocolate.</p>
+      <div class="card-produto__footer">
+        <span class="card-produto__price">R$ 9,00</span>
+        <a href="#reserva" class="btn btn--secondary">Pedir</a>
+      </div>
+    </div>
+
+  </section>
+
+ 
+  <section id="reserva" class="card-base reserva-section">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #3e2723;">Reservar uma Mesa</h2>
+    <form novalidate action="#">
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" class="input-field" placeholder="Seu nome completo">
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data</label>
+        <input type="date" id="data" class="input-field">
+      </div>
+
+      <div class="form-group">
+        <label for="horario">Horário</label>
+        <input type="time" id="horario" class="input-field">
+      </div>
+
+      <div class="form-group">
+        <label for="pessoas">Número de Pessoas</label>
+        <input type="number" id="pessoas" class="input-field" min="1" max="10" value="2">
+      </div>
+
+      <button type="button" class="btn btn--primary" style="width: 100%;">Reservar</button>
+    </form>
+  </section>
+
+  
+  <footer class="footer">
+    <p><strong>Grão e Ofício Cafeteria</strong> | Caicó - RN</p>
+    <p>Horário de Funcionamento: Seg a Sáb - 07h às 20h</p>
+    <div class="footer__socials">
+      <span class="icon-badge">IG</span>
+      <span class="icon-badge">FB</span>
+      <span class="icon-badge">WA</span>
+    </div>
+  </footer>
+
+</body>
+</html>
