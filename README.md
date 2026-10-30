@@ -1,7 +1,7 @@
 # ProjetoRomerito
 Tema: Cafeteria - Grão e Ofício
 Integrantes: Allan e Isabelle
-Layout Responsivo 
+Layout Institucional e Catálogo
 
 O objetivo da página é apresentar a cafeteria Grão & Ofício, divulgando sua proposta, seus produtos e seus serviços, o site permite que os visitantes conheçam a cafeteria, visualizem o cardápio, descubram um pouco sobre a história do estabelecimento e encontrem uma área destinada à reserva de mesas e a proposta é oferecer uma experiência visual agradável, com navegação simples e adaptação para diferentes dispositivos.
  
