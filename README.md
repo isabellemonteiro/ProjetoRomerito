@@ -1,7 +1,9 @@
 # ProjetoRomerito
 Tema: Cafeteria - Grão e Ofício
 Integrantes: Allan e Isabelle
+Layout Responsivo 
 
+O objetivo da página é apresentar a cafeteria Grão & Ofício, divulgando sua proposta, seus produtos e seus serviços, o site permite que os visitantes conheçam a cafeteria, visualizem o cardápio, descubram um pouco sobre a história do estabelecimento e encontrem uma área destinada à reserva de mesas e a proposta é oferecer uma experiência visual agradável, com navegação simples e adaptação para diferentes dispositivos.
  
  Componentes simples desenvolvidos:
 - Botões 
@@ -14,7 +16,6 @@ Integrantes: Allan e Isabelle
 - Textos e parágrafos
 
 Componentes compostos desenvolvidos:
-
 - Navbar:logo, links de navegação e botão de reserva.
 - Hero:título, descrição e botão de acesso ao cardápio.
 - Card de produto: imagem, badge, título, descrição, preço e botão.
@@ -26,14 +27,12 @@ Componentes compostos desenvolvidos:
 Onde foi utilizado Flexbox:
 O Flexbox foi utilizado na barra de navegação, nos links da navbar, nos grupos do formulário, no rodapé e na área de preço e botão dos cards de produtos. 
 
-Onde foi utilizado CSS Grid:
-O CSS Grid foi utilizado na seção Cardápio em Destaque, através da classe .cardapio-grid, para organizar os cards dos produtos em colunas que se adaptam ao tamanho da tela.
+Link do diário de bordo:
 
-Onde foi utilizado Position:
-O position foi utilizado na navbar, com position: sticky para manter ela no topo durante a rolagem, também foi utilizado nos cards dos produtos, com 'position: relative' e nos badges com 'position: absolute'  permitindo posicionar as etiquetas sobre as imagens.
+A Inteligência Artificial foi utilizada como ferramenta de apoio durante o desenvolvimento do projeto auxiliando na organização do código e no esclarecimento de dúvidas sobre responsividade.
 
-Onde foi utilizado Float:
-O float foi utilizado na imagem da seção "Sobre Nossa Casa", fazendo com que a imagem fique à esquerda e os textos sejam posicionados ao seu redor.
-
-Estratégia utilizada para responsividade:
-Foi utilizada uma Media Query com limite de 768px para adaptar o site a telas menores, onde nesse tamanho a navbar passa a ficar vertical, a imagem da seção "Sobre" deixa de utilizar float e ocupa toda a largura disponível e o card destacado perde o efeito de escala.
+Como abrir o projeto:
+- Baixe a pasta do projeto.
+- Localize o arquivo index.html.
+- Abra o arquivo com o navegador Google Chrome. 
+- Para visualizar o código utilize o VS Code.
