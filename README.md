@@ -1,5 +1,6 @@
 # ProjetoRomerito
 Tema: Cafeteria - Grão e Ofício
+Integrantes: Allan e Isabelle
 
  
  Componentes simples desenvolvidos:
