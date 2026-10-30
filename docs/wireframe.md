@@ -3,13 +3,13 @@
 ├─────────────────────────────────────────────┤
 │ Hero: título | texto de apresentação | botão │
 ├─────────────────────────────────────────────┤
-│ Sobre: texto + imagem da cafeteria │
+│ Sobre: texto + imagem da cafeteria           │
 ├─────────────────────────────────────────────┤
-│ Cardápio │
-│ [Card] [Card] [Card] │
-│ [Card] [Card] [Card] │
+│ Cardápio                                    │
+│ [Card] [Card] [Card]                        │
+│ [Card] [Card] [Card]                        │
 ├─────────────────────────────────────────────┤
-│ Formulário de reserva de mesa │
+│ Formulário de reserva de mesa                │
 ├─────────────────────────────────────────────┤
-│ Rodapé: contato | horário | redes sociais │
+│ Rodapé: contato | horário | redes sociais    │
 └─────────────────────────────────────────────┘
