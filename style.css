@@ -1,17 +1,22 @@
-
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #fcf8f2;
 }
 
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 .btn {
   display: inline-block;
@@ -20,14 +25,12 @@ body {
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn--primary {
-  background-color: #6f4e37; 
-  color: #ffffff;
+  background-color: #6f4e37;
+  color: white;
 }
 
 .btn--primary:hover {
@@ -35,12 +38,22 @@ body {
 }
 
 .btn--secondary {
-  background-color: #d7ccc8; 
+  background-color: #d7ccc8;
   color: #3e2723;
 }
 
 .btn--secondary:hover {
   background-color: #bcaaa4;
+}
+
+.btn--outline {
+  background-color: white;
+  color: #6f4e37;
+  border: 1px solid #6f4e37;
+}
+
+.btn--outline:hover {
+  background-color: #f0e6dc;
 }
 
 
@@ -50,34 +63,60 @@ body {
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.badge--destaque { 
-  background-color: #ffb300; 
-  color: #000; 
+.badge--destaque {
+  background-color: #ffb300;
+  color: black;
 }
 
-.badge--novo { 
-  background-color: #2e7d32; 
-  color: #fff; 
+.badge--novo {
+  background-color: #2e7d32;
+  color: white;
 }
 
-.badge--esgotado { 
-  background-color: #c62828; 
-  color: #fff; 
+.badge--esgotado {
+  background-color: #c62828;
+  color: white;
 }
 
 
-.card-base {
-  background-color: #fff;
+.card {
+  background-color: white;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
-  padding: 16px;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.card--destaque {
+  border: 2px solid #6f4e37;
+  background-color: #fffdf9;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #3e2723;
+}
+
+.card__text {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card__price {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 1.1rem;
+}
 
 .form-group {
   display: flex;
@@ -85,36 +124,24 @@ body {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.form-group label,
+.form-group__label {
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: bold;
   color: #3e2723;
 }
 
+.input,
 .input-field {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  outline: none;
 }
 
+.input:focus,
 .input-field:focus {
   border-color: #6f4e37;
-}
-
-
-.icon-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #6f4e37;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: bold;
 }
 
 
@@ -124,16 +151,14 @@ body {
   align-items: center;
   padding: 15px 30px;
   background-color: #3e2723;
-  color: #fff;
-  position: sticky; 
-  top: 0;
-  z-index: 1000;
+  color: white;
 }
 
 .navbar__logo {
   font-size: 1.4rem;
   font-weight: bold;
   color: #f5f5f5;
+  text-decoration: none;
 }
 
 .navbar__links {
@@ -145,26 +170,68 @@ body {
 .navbar__links a {
   color: #f5f5f5;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .navbar__links a:hover {
   text-decoration: underline;
 }
 
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('https://image.slidesdocs.com/responsive-images/background/coffee-beans-coffee-plant-vintage-poster-powerpoint-background_9e9971975c__960_540.jpg') center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.sobre {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.sobre__img {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.cardapio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.cardapio-grid .card-produto {
+  flex: 1 1 280px;
+}
+
 .card-produto {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative; 
+  position: relative;
 }
-
 
 .card-produto--destaque {
   border: 2px solid #6f4e37;
   background-color: #fffdf9;
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(111, 78, 55, 0.15);
 }
 
 .card-produto img {
@@ -175,13 +242,13 @@ body {
 }
 
 .card-produto .badge {
-  position: absolute; 
+  position: absolute;
   top: 25px;
   right: 25px;
 }
 
 .card-produto__title {
-  margin: 12px 0 6px 0;
+  margin: 12px 0 6px;
   font-size: 1.2rem;
   color: #3e2723;
 }
@@ -206,61 +273,47 @@ body {
 }
 
 
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://image.slidesdocs.com/responsive-images/background/coffee-beans-coffee-plant-vintage-poster-powerpoint-background_9e9971975c__960_540.jpg') center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 { 
-  font-size: 2.8rem; 
-  margin-bottom: 15px; 
-}
-
-.hero p { 
-  font-size: 1.2rem; 
-  margin-bottom: 25px; 
-}
-
-
-.sobre {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-
-.sobre__img {
-  float: left; 
-  width: 300px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.sobre::after { 
- 
-  display: table;
-  clear: both;
-}
-
-
-.cardapio-grid {
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 0 20px;
-}
-
 .section-title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   font-size: 2rem;
   color: #3e2723;
 }
+
+
+.biblioteca {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.biblioteca__intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.biblioteca__grupo {
+  margin-bottom: 40px;
+}
+
+.biblioteca__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.biblioteca__item {
+  flex: 1 1 250px;
+}
+
+.biblioteca__item .card {
+  height: 100%;
+}
+
+.biblioteca__item .biblioteca__lista {
+  margin-top: 15px;
+}
+
 
 .reserva-section {
   max-width: 500px;
@@ -268,13 +321,29 @@ body {
   padding: 30px;
 }
 
-/* Rodapé */
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #6f4e37;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
 .footer {
   background-color: #2c1b18;
   color: white;
   text-align: center;
   padding: 30px 20px;
   margin-top: 50px;
+}
+
+.footer a {
+  color: white;
 }
 
 .footer__socials {
@@ -290,14 +359,23 @@ body {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .sobre__img {
     float: none;
     width: 100%;
     margin-right: 0;
   }
 
-  .card-produto--destaque {
-    transform: none;
+  .cardapio-grid {
+    flex-direction: column;
+  }
+
+  .biblioteca__lista {
+    flex-direction: column;
+  }
+
+  .card__footer {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
