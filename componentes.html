@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Componentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="navbar__logo" href="index.html">Grão &amp; Ofício</a>
+    <nav aria-label="Navegação principal">
+      <ul class="navbar__links">
+        <li><a href="#simples">Componentes simples</a></li>
+        <li><a href="#compostos">Componentes compostos</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="biblioteca container">
+    <div class="biblioteca__intro">
+      <h1 class="section-title">Biblioteca de componentes</h1>
+    
+    </div>
+
+    <section id="simples" class="biblioteca__grupo">
+      <h2 class="section-title">Componentes simples</h2>
+
+      <div class="biblioteca__lista">
+
+        <article class="biblioteca__item">
+          <div class="card">
+            <h3 class="card__title">Botões — .btn</h3>
+            <p class="card__text">Componente com três variantes de ação.</p>
+            <div class="biblioteca__lista">
+              <a href="#" class="btn btn--primary">Primário</a>
+              <a href="#" class="btn btn--secondary">Secundário</a>
+              <a href="#" class="btn btn--outline">Contorno</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="biblioteca__item">
+          <div class="card">
+            <h3 class="card__title">Badges — .badge</h3>
+            <p class="card__text">Etiquetas para indicar condição ou destaque.</p>
+            <p>
+              <span class="badge badge--destaque">Destaque</span>
+              <span class="badge badge--novo">Novo</span>
+              <span class="badge badge--esgotado">Esgotado</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="biblioteca__item">
+          <div class="card">
+            <h3 class="card__title">Campo — .input</h3>
+            <div class="form-group">
+              <label class="form-group__label" for="exemplo">Exemplo de campo</label>
+              <input class="input" id="exemplo" type="text" placeholder="Digite aqui">
+            </div>
+          </div>
+        </article>
+
+        <article class="biblioteca__item">
+          <div class="card">
+            <h3 class="card__title">Cartão — .card</h3>
+            <p class="card__text">Superfície reutilizável com variante de destaque.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="compostos" class="biblioteca__grupo">
+      <h2 class="section-title">Componentes compostos</h2>
+
+      <div class="biblioteca__lista">
+
+        <article class="biblioteca__item">
+          <div class="card card--destaque">
+            <span class="badge badge--destaque">Mais pedido</span>
+            <h3 class="card__title">Card de produto</h3>
+            <p class="card__text">Combina badge, título, descrição, preço e botão de ação.</p>
+
+            <div class="card__footer">
+              <span class="card__price">R$ 8,50</span>
+              <button type="button" class="btn btn--secondary" disabled aria-disabled="true">
+                Ver produto
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="biblioteca__item">
+          <div class="card">
+            <h3 class="card__title">Grupo de reserva</h3>
+            <p class="card__text">Combina rótulo, campo de formulário e botão para organizar uma solicitação.</p>
+
+            <div class="form-group">
+              <label class="form-group__label" for="reserva-exemplo">Nome</label>
+              <input class="input" id="reserva-exemplo" type="text" placeholder="Seu nome">
+            </div>
+
+            <a href="index.html#reserva" class="btn btn--primary">Ir para reserva</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Grão &amp; Ofício — Biblioteca de componentes</p>
+    <a href="index.html">Voltar à página inicial</a>
+  </footer>
+</body>
+</html>
