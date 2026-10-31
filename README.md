@@ -27,8 +27,8 @@ Componentes compostos desenvolvidos:
 Onde foi utilizado Flexbox:
 O Flexbox foi utilizado na barra de navegação, nos links da navbar, nos grupos do formulário, no rodapé e na área de preço e botão dos cards de produtos. 
 
-Link do diário de bordo:
-https://docs.google.com/document/d/1_l1nYhyZR0r7ZNhbe5vxMogJJ8XfFU2Grs3hX_LLxc4/edit?usp=sharing
+Diário de bordo:
+docs/diario-de-bordo.md
 
 A Inteligência Artificial foi utilizada como ferramenta de apoio durante o desenvolvimento do projeto auxiliando na organização do código e no esclarecimento de dúvidas sobre responsividade e biblioteca de componentes.
 
